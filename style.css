@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.search__container {
+    width: 100%;
+    height: 30vh;
+    margin: 0 auto;
+    padding: 0 48px;
+}
+
+.search__row {
+    width: 100%;
+    margin: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search__bar--container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search__bar--label {
+    font-size: 28px;
+    padding-bottom: 8px;
+}
+
+.search__bar--input {
+    width: 50%;
+    font-size: 20px;
+    margin-right: 4px;
+    border-radius: 12px;
+    border: 2px solid navy;
+    padding-left: 8px;
+}
+
+.search__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.search__bar--btn {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 12px;
+    border-style: none;
+    background-color: navy;
+    color: white;
+    transform: scale(1);
+    transition: all 300ms ease;
+}
+
+.search__bar--btn:active {
+    transform: scale(0.9);
+}
+
+.fa-magnifying-glass {
+    font-size: 20px;
+}
+
+/*
+
+MOVIES LISTED
+
+*/
+
+.container {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0 48px;
+}
+
+.row {
+    width: 100%;
+    margin: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.movies__list--title {
+    width: 100%;
+}
+
+.movies__list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movies {
+    width: 25%;
+}
