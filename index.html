@@ -3,40 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JMDB Home</title>
     <link rel="stylesheet" href="style.css">
     <script src="index.js" defer></script>
-    <script src="https://kit.fontawesome.com/27edb1adb0.js" crossorigin="anonymous"></script>
+    <script 
+    src="https://kit.fontawesome.com/27edb1adb0.js" 
+    crossorigin="anonymous"
+    ></script>
 </head>
-<body>
-    <div class="search__container">
-        <div class="search__row">
-            <div class="search__bar--container">
-                <label class="search__bar--label">
-                    <b>Find Movies</b>
-                </label>
-                <div class="search__wrapper">
-                    <input class="search__bar--input" type="text" placeholder="Search...">
-                    <button class="search__bar--btn" onclick="">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+<body id="homepage__body">
+    <section id="landing__page">
+        <nav class="landing__nav">
+            <h2 class="nav__logo--wrapper">
+                <a href="#">
+                    J/MDB
+                </a>
+            </h2>
+            <h1 class="nav__slogan">
+                Find your pick with just one click!
+            </h1>
+            <div class="nav__link--wrapper">
+                <div class="nav__link">
+                    <a href="">
+                        About
+                    </a>
+                </div>
+                <div class="nav__link">
+                    <a href="">
+                        FAQ
+                    </a>
+                </div>
+                <div class="nav__link">
+                    <a href="">
+                        Contact
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <header>
+            <div class="header__wrapper">
+                <div class="header__text">
+                    <h1 class="header__title">
+                        Easy access to all of your favorites, with the click of a button!
+                    </h1>
+                    <h2 class="header__subtitle">
+                        Get started now
+                    </h2>
+                    <button class="header__browse--btn">
+                        <a class="browse__btn--anchor" href="movies.html">
+                            <b>Browse Movies</b>
+                           <span><i class="fa-solid fa-arrow-right"></i></span>
+                        </a>
                     </button>
                 </div>
             </div>
+            <div class="landing__img--wrapper">
+                <img src="Movie Assets/il_1140xN.6128648362_rb7k.webp" alt="" class="landing__img">
+            </div>
+        </header>
+    </section>
+    <section class="about__section">
+        <h2 class="about__title">
+            About Us
+        </h2>
+        <div class="about__para">
+            We have worked the past 27 years to ensure that you, our patrons, are provided with the best and easiest experience possible when searching for your favorite shorts, shows, and movies. We are committed to continuing our mission of providing you with visual media of all lengths, languages, and genres.
         </div>
-    </div>
-    <div class="container">
-        <div class="row">
-                <h1 class="movies__list--title">
-                        List of Movies
-                </h1>
-                <div class="movies__list">
-                    <div class="movies">
-                        <img src="https://movie.poster.com" alt="">
-                        <p><b>Movie Title</b></p>
-                        <p>0000</p>
+    </section>
+        <section>
+            <div class="feedback__wrapper">
+                <label>
+                    We hope you're finding everything you need and are enjoying your experience on our website. Feel free to send us any feedback, whether it be any media that we should add to our site, bugs, or anything else that could help improve your experience!
+                </label>
+                <input type="text" class="footer__input">
+                <button class="feedback__btn">
+                    Send
+                </button>
+            </div>
+        </section>
+    <footer>
+        <div class="footer__container">
+                <div class="footer__wrapper">
+                    <div class="return__links--wrapper">
+                        <h3 class="footer__return--top">
+                            <a class="footer__return--anchor" href="#">
+                                Return to Top
+                            </a>
+                        </h3>
+                        <div class="footer__links--wrapper">
+                            <div class="footer__link">
+                                About
+                            </div>
+                            <div class="footer__link">
+                                FAQ
+                            </div>
+                            <div class="footer__link">
+                                Contact
+                            </div>
+                        </div>
                     </div>
+                    <h2 class="footer__logo">
+                        <a href="#">
+                            J/MDB
+                        </a>
+                    </h2>
                 </div>
         </div>
-    </div>
+    </footer>
 </body>
 </html>

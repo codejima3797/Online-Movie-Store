@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Movie Library</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="movies.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/27edb1adb0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section>
+      <div class="nav__search--container">
+        <nav class="search__nav">
+            <h2 class="movie-nav__logo--wrapper">
+                <a href="index.html">
+                    J/MDB
+                </a>
+            </h2>
+            <label class="search__bar--label">
+                <b>Find Content</b>
+              </label>
+          <div class="nav__home--wrapper">
+            <a class="nav__home--anchor" href="index.html">
+              <i class="fa-solid fa-house"></i>
+              <span class="nav__home--text">Home</span>
+            </a>
+          </div>
+        </nav>
+        <div class="search__container">
+          <div class="search__bar--container">
+            <div class="search__wrapper">
+              <input
+                class="search__bar--input"
+                type="text"
+                placeholder="Search..."
+                onchange="onSearchChange(event)"
+              />
+              <button class="search__bar--btn" onclick="searchButton()">
+                <i class="fa-solid fa-magnifying-glass search__page--icon"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+            <div class="movie__header">
+                <h1 class="movie__header--title">
+                    Search Results
+                </h1>
+                <div class="filter__wrapper">
+                    <h4 class="filter__text">
+                        Sort by:
+                    </h4>
+                    <select id="filter">
+                        <option value="">Sort</option>
+                        <option value="RECENT">Recent</option>
+                        <option value="A_TO_Z">A-Z</option>
+                        <option value="Z_TO_A">Z-A</option>
+                    </select>
+                </div>
+            </div>
+            <hr class="movie__break--line">
+            <div class="movies__list">
+            <div class="movies">
+              <img
+                class="movie__poster"
+                src="https://movie.poster.com"
+                alt=""
+              />
+              <p class="movie__title">
+                <b>Movie Title <span class="movie__year">(0000)</span></b>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="movies__footer">
+        <div class="movie__footer--container">
+            <div class="movie__footer--logo">
+                <a href="index.html">
+                    J/MDB
+                </a>
+            </div>
+        </div>
+    </footer>
+  </body>
+</html>
