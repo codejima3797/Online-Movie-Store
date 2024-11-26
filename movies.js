@@ -1,7 +1,7 @@
 const movieListEl = document.querySelector(".movies__list");
 const searchInputEl = document.querySelector(".search__bar--input");
 const filterEl = document.querySelector("#filter");
-const defaultMovie = "Example"; 
+const defaultMovie = `https://www.omdbapi.com/?apikey=447acd47&s=aaa`; 
 let currentMovies = []; 
 
 const id = localStorage.getItem("id") || defaultMovie; 
